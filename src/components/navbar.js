@@ -1,14 +1,27 @@
 import React from "react";
 import { Menu, Icon, Button } from "semantic-ui-react";
+import "../pages/main";
 import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="container" style={{ marginTop: 30 }}>
-      <Menu pointing secondary size="large" color="red">
-        <Menu.Item classname="nav-link" name="Home" to="/home"></Menu.Item>
-      </Menu>
-    </div>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/">
+          Home
+        </a>
+      </li>
+      {/* <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/">
+          About
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/">
+          Shop
+        </a>
+      </li> */}
+    </ul>
   );
 };
 export default Navbar;

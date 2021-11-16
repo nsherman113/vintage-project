@@ -1,3 +1,16 @@
 * {
-  color: beige;
+  color: black;
+  background-color: beige;
+}
+
+li {
+  display: block;
+  text-align: center;
+}
+a {
+  font-size: 25px;
+  display: inline-block;
+}
+a:hover {
+  color: red;
 }
